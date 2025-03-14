@@ -1,9 +1,12 @@
-package main 
+package main
 
 import (
-	"fmt"
+	"log"
+
+	"github.com/dev-jaysharma/backend-golang/db"
 )
 
 func main() {
-	fmt.Println("Hello, World!")
+	db.Connector()
+	log.Println("🚀Connected to database by main.go file")
 }
